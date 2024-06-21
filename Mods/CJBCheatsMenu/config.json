@@ -5,7 +5,7 @@
   "GrowCropsKey": "OemPeriod",
   "GrowRadius": 1,
   "DefaultTab": "WarpLocations",
-  "MoveSpeed": 0,
+  "MoveSpeed": 4,
   "InfiniteHealth": false,
   "InfiniteStamina": false,
   "InstantCooldowns": false,
@@ -30,7 +30,7 @@
   "DurableFences": false,
   "InstantBuild": false,
   "AutoFeed": false,
-  "AutoPetAnimals": false,
+  "AutoPetAnimals": true,
   "AutoPetPets": false,
   "AutoWater": false,
   "InfiniteHay": false

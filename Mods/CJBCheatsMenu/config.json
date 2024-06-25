@@ -19,7 +19,7 @@
   "ThrowBobberMax": false,
   "DurableTackles": true,
   "AlwaysTreasure": true,
-  "FreezeTime": false,
+  "FreezeTime": true,
   "FreezeTimeInside": false,
   "FreezeTimeCaves": false,
   "FastFruitTree": false,

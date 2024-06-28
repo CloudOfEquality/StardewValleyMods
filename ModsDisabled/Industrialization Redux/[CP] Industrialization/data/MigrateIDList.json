@@ -1,0 +1,491 @@
+    {
+        "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_AltEFurnace": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_AltEFurnace",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Alternator E. Furnace\" {{ModID}}.AlternatorEFurnace"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledAltEFurnace": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_AutoMiner": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_AutoMiner",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Auto Miner\" {{ModID}}.AutoMiner"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledAutoMiner": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_CeramicKiln": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_CeramicKiln",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Ceramic Kiln\" {{ModID}}.CeramicKiln"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledCeramicKiln": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_ChromiumFurnace": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_ChromiumFurnace",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Chromium Furnace\" {{ModID}}.ChromiumFurnace"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledChroFurnace": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_CombustionGenerator": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_CombustionGenerator",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Combustion Generator\" {{ModID}}.CombustionGenerator"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledCombustionGen": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_CombustionMiner": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_CombustionMiner",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Combustion Miner\" {{ModID}}.CombustionMiner"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledCombustionMiner": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_EFurnace": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_EFurnace",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Electric Furnace\" {{ModID}}.EFurnace"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledEFurnace": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_GardenCloche": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_GardenCloche",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Garden Cloche\" {{ModID}}.GardenCloche"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledGardenCloche": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_GemPolisher": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_GemPolisher",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Gem Polisher\" {{ModID}}.GemPolisher"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledGemPolisher": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_HayBin": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_HayBin",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Hay Bin\" {{ModID}}.HayBin"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledHayBin": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_HayRehydrator": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_HayRehydrator",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Hay Rehydrator\" {{ModID}}.HayRehydrator"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledHayRehydrator": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_IndustrialDistillery": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_IndustrialDistillery",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Industrial Distillery\" {{ModID}}.IndustrialDistillery"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledIndustrialDistillery": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_JColaGenerator": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_JColaGenerator",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:JojaCola Generator\" {{ModID}}.JColaGenerator"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledJColaGenerator": true
+            }
+        },{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_MineralWasher": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_MineralWasher",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Mineral Washer\" {{ModID}}.MineralWasher"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledMineralWasher": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_PreservativePress": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_PreservativePress",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Preservative Press\" {{ModID}}.PreservativePress"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPreservativePress": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_Pulverizer": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_Pulverizer",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Pulverizer\" {{ModID}}.Pulverizer"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPulverizer": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_RockCrusher": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_RockCrusher",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Rock Crusher\" {{ModID}}.RockCrusher"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledRockCrusher": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_SuperGardenCloche": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_SuperGardenCloche",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Super Garden Cloche\" {{ModID}}.SuperGardenCloche"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledSGardenCloche": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_TreeCloche": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_TreeCloche",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:big-craftables:Tree Cloche\" {{ModID}}.TreeCloche"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledTreeCloche": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_Brick": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_Brick",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Brick\" {{ModID}}.Brick"
+                    ],
+                    "HostOnly": true
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_ChroBar": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_ChroBar",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Chromium Bar\" {{ModID}}.ChroBar"
+                    ],
+                    "HostOnly": true
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_ChroCompound": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_ChroCompound",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Chromium Compound\" {{ModID}}.ChroCompound"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledChroCompound": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvCopper": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvCopper",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Pulverized Copper\" {{ModID}}.PulvCopper"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPulvCopper": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvIron": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvIron",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Pulverized Iron\" {{ModID}}.PulvIron"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPulvIron": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvGold": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvGold",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Pulverized Gold\" {{ModID}}.PulvGold"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPulvGold": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvIridium": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvIridium",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Pulverized Iridium\" {{ModID}}.PulvIridium"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPulvIridium": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvPris": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvPris",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Pulverized Prismatic Shard\" {{ModID}}.PulvPris"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPulvPris": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvQuartz": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvQuartz",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Pulverized Quartz\" {{ModID}}.PulvQuartz"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPulvPris": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvRadioactivev": {
+                    "Id": "IndustrializationRedux_MigrateIds_PackNotInstalled_PulvRadioactive",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Pathoschild.ContentPatcher_MigrateIds Items \"JsonAssets:objects:Pulverized Prismatic Shard\" {{ModID}}.PulvRadioactive"
+                    ],
+                    "HostOnly": true
+                }
+            },
+            "When": {
+                "G256.IR.Code/EnabledPulvPris": true
+            }
+        },
+
+        ]
+    }

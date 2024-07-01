@@ -11,13 +11,13 @@
   "ShowUnknownGiftTastes": true,
   "ShowUnknownRecipes": true,
   "ShowPuzzleSolutions": true,
-  "HighlightUnrevealedGiftTastes": false,
+  "HighlightUnrevealedGiftTastes": true,
   "ShowGiftTastes": {
     "Loved": true,
     "Liked": true,
-    "Neutral": false,
-    "Disliked": false,
-    "Hated": false
+    "Neutral": true,
+    "Disliked": true,
+    "Hated": true
   },
   "CollapseLargeFields": {
     "Enabled": true,

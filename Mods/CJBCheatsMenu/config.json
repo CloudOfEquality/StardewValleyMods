@@ -16,7 +16,7 @@
   "HarvestScythe": false,
   "InstantBite": true,
   "InstantCatch": true,
-  "ThrowBobberMax": false,
+  "ThrowBobberMax": true,
   "DurableTackles": true,
   "AlwaysTreasure": true,
   "FreezeTime": false,

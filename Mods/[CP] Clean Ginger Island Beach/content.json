@@ -1,0 +1,22 @@
+{
+    "Format": "1.18.0",
+  
+	"ConfigSchema": {
+	
+		"Cleanisland": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },		
+    },
+   
+	"Changes": [
+		{
+		"Action": "Load",
+		"Target": "Maps/Island_W",
+		"FromFile": "assets/Island_W.tbin",
+		"When": {
+			"Cleanisland": true 
+				}
+		},
+    ]
+}

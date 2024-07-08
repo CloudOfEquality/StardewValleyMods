@@ -1,0 +1,14 @@
+{
+    "Name": "Clean Ginger Island Beach",
+    "Author": "Boogie",
+    "Version": "1.1",
+    "Description": "Cleans up the beach on the western island and makes the tidepools walkable",
+    "UniqueID": "Boogie.CleanerIsland",
+	"UpdateKeys": [ "Nexus:8911" ],
+    "MinimumApiVersion": "1.0",
+        "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"	
+    }
+    
+   
+ }

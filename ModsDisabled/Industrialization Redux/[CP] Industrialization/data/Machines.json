@@ -175,9 +175,6 @@
                             "Interval": 60
                         }
                     ],
-                    "PreventTimePass": [
-                        "Inside"
-                    ],
                     "WobbleWhileWorking": false,
                     "WorkingEffectChance": 1.0
                 },
@@ -294,23 +291,23 @@
                             }
                         ],
                         "MinutesUntilReady": 300
+                    },
+                    {
+                        "Id": "Alternator_PrisShard",
+                        "Triggers": [
+                            {    
+                            "Id": "ItemPlacedInMachine",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemID": "{{ModID}}.PulvPris"
+                            }
+                        ],
+                        "OutputItem": [
+                            {
+                            "ItemID": "(O)74" //Prismatic Shard
+                            }
+                        ],
+                        "MinutesUntilReady": 300
                     }
-                    // {
-                    //     "Id": "Alternator_PrisShard",
-                    //     "Triggers": [
-                    //         {    
-                    //         "Id": "ItemPlacedInMachine",
-                    //         "Trigger": "ItemPlacedInMachine",
-                    //         "RequiredItemID": "{{ModID}}.PulvPris"
-                    //         }
-                    //     ],
-                    //     "OutputItem": [
-                    //         {
-                    //         "ItemID": "(O)74" //Prismatic Shard
-                    //         }
-                    //     ],
-                    //     "MinutesUntilReady": 300
-                    // }
                     ],
                     "LoadEffects": [
                         {
@@ -345,8 +342,7 @@
                             ],
                             "OutputItem": [
                                 {
-                                "ItemID": "(O){{ModID}}.Brick", //Brick
-                                "MinStack": 15
+                                "ItemID": "(O){{ModID}}.Brick" //Brick
                                 }
                             ],
                             "MinutesUntilReady": 20
@@ -382,7 +378,7 @@
                                 "Id": "ItemPlacedInMachine",
                                 "Trigger": "ItemPlacedInMachine",
                                 "RequiredItemID": "769",
-                                "RequiredCount": 1
+                                "RequiredCount": 3
                                 }
                             ],
                             "OutputItem": [
@@ -399,7 +395,7 @@
                                 "Id": "ItemPlacedInMachine",
                                 "Trigger": "ItemPlacedInMachine",
                                 "RequiredItemID": "768",
-                                "RequiredCount": 1
+                                "RequiredCount": 3
                                 }
                             ],
                             "OutputItem": [
@@ -605,22 +601,22 @@
                             ],
                             "MinutesUntilReady": 280
                         },
-                        // {
-                        //     "Id": "Pulverized_PrisShard",
-                        //     "Triggers": [
-                        //         {    
-                        //         "Id": "ItemPlacedInMachine",
-                        //         "Trigger": "ItemPlacedInMachine",
-                        //         "RequiredItemID": "{{ModID}}.PulvPris"
-                        //         }
-                        //     ],
-                        //     "OutputItem": [
-                        //         {
-                        //         "ItemID": "(O)74" //Prismatic Shard
-                        //         }
-                        //     ],
-                        //     "MinutesUntilReady": 280
-                        // },
+                        {
+                            "Id": "Pulverized_PrisShard",
+                            "Triggers": [
+                                {    
+                                "Id": "ItemPlacedInMachine",
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemID": "{{ModID}}.PulvPris"
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                "ItemID": "(O)74" //Prismatic Shard
+                                }
+                            ],
+                            "MinutesUntilReady": 280
+                        },
                         {
                             "Id": "Default_IridiumBar",
                             "Triggers": [
@@ -894,23 +890,23 @@
                             ],
                             "MinutesUntilReady": 140
                         },
-                        // {
-                        //     "Id": "Pulverized_PrisShard",
-                        //     "Triggers": [
-                        //         {    
-                        //         "Id": "ItemPlacedInMachine",
-                        //         "Trigger": "ItemPlacedInMachine",
-                        //         "RequiredItemID": "{{ModID}}.PulvPris"
-                        //         }
-                        //     ],
-                        //     "OutputItem": [
-                        //         {
-                        //         "ItemID": "(O)74", //Prismatic Shard
-                        //         "MinStack": 2
-                        //         }
-                        //     ],
-                        //     "MinutesUntilReady": 140
-                        // },
+                        {
+                            "Id": "Pulverized_PrisShard",
+                            "Triggers": [
+                                {    
+                                "Id": "ItemPlacedInMachine",
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredItemID": "{{ModID}}.PulvPris"
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                "ItemID": "(O)74", //Prismatic Shard
+                                "MinStack": 2
+                                }
+                            ],
+                            "MinutesUntilReady": 140
+                        },
                         {
                             "Id": "Default_IridiumBar",
                             "Triggers": [
@@ -1300,13 +1296,13 @@
                                     "RequiredTags": [
                                       "category_minerals",
                                       "!crystalarium_banned"
-                                    ]
+                                    ],
+                                    "Condition": "!ITEM_QUALITY Input 4 4"
                                 }
                             ],
                             "OutputItem": [
                                 {
-                                "ItemID": "DROP_IN",
-                                "Quality": 4
+                                "ItemID": "DROP_IN"
                                 }
                             ],
                             "MinutesUntilReady": 480
@@ -2841,579 +2837,6 @@
                     "WobbleWhileWorking": true,
                     "LightWhileWorking": null,
                     "ShowNextIndexWhileWorking": false,
-                    "ShowNextIndexWhenReady": false,
-                    "AllowFairyDust": true,
-                    "IsIncubator": false,
-                    "ClearContentsOvernightCondition": null,
-                    "StatsToIncrementWhenLoaded": null,
-                    "StatsToIncrementWhenHarvested": null,
-                    "ExperienceGainOnHarvest": null,
-                    "CustomFields": null
-                },
-                // Added in 1.1.0
-                "(BC){{ModID}}.GasSmoker": {
-                    "HasInput": false,
-                    "HasOutput": false,
-                    "InteractMethod": null,
-                    "OutputRules": [
-                      {
-                        "Id": "SmokedFish",
-                        "Triggers": [
-                          {
-                            "Id": "ItemPlacedInMachine",
-                            "Trigger": "ItemPlacedInMachine",
-                            "RequiredItemId": null,
-                            "RequiredTags": [
-                              "category_fish"
-                            ],
-                            "RequiredCount": 5,
-                            "Condition": null
-                          }
-                        ],
-                        "UseFirstValidOutput": false,
-                        "OutputItem": [
-                          {
-                            "CustomData": null,
-                            "OutputMethod": null,
-                            "CopyColor": false,
-                            "CopyPrice": false,
-                            "CopyQuality": false,
-                            "PreserveType": null,
-                            "PreserveId": null,
-                            "IncrementMachineParentSheetIndex": 1,
-                            "PriceModifiers": null,
-                            "PriceModifierMode": "Stack",
-                            "Condition": null,
-                            "Id": "FLAVORED_ITEM SmokedFish DROP_IN_ID DROP_IN_QUALITY",
-                            "ItemId": "FLAVORED_ITEM SmokedFish DROP_IN_ID DROP_IN_QUALITY",
-                            "RandomItemId": null,
-                            "MaxItems": null,
-                            "MinStack": 5,
-                            "MaxStack": -1,
-                            "Quality": -1,
-                            "ObjectInternalName": null,
-                            "ObjectDisplayName": null,
-                            "ToolUpgradeLevel": -1,
-                            "IsRecipe": false,
-                            "StackModifiers": null,
-                            "StackModifierMode": "Stack",
-                            "QualityModifiers": null,
-                            "QualityModifierMode": "Stack",
-                            "ModData": null,
-                            "PerItemCondition": null
-                          }
-                        ],
-                        "MinutesUntilReady": 30,
-                        "DaysUntilReady": -1,
-                        "InvalidCountMessage": "[LocalizedText Strings\\BigCraftables:{{ModID}}_GasSmoker_InvalidCount]",
-                        "RecalculateOnCollect": false
-                      }
-                    ],
-                    "AdditionalConsumedItems": [],
-                    "PreventTimePass": null,
-                    "ReadyTimeModifiers": null,
-                    "ReadyTimeModifierMode": "Stack",
-                    "InvalidItemMessage": null,
-                    "InvalidItemMessageCondition": null,
-                    "InvalidCountMessage": null,
-                    "LoadEffects": [
-                      {
-                        "Id": "Default",
-                        "Condition": null,
-                        "Sounds": [
-                          {
-                            "Id": "furnace",
-                            "Delay": 0
-                          }
-                        ],
-                        "Interval": 100,
-                        "Frames": null,
-                        "ShakeDuration": -1,
-                        "TemporarySprites": null
-                      }
-                    ],
-                    "WorkingEffects": null,
-                    "WorkingEffectChance": 0.33,
-                    "AllowLoadWhenFull": false,
-                    "WobbleWhileWorking": false,
-                    "LightWhileWorking": {
-                      "Radius": 1.5,
-                      "Color": "DarkCyan"
-                    },
-                    "ShowNextIndexWhileWorking": false,
-                    "ShowNextIndexWhenReady": true,
-                    "AllowFairyDust": true,
-                    "IsIncubator": false,
-                    "ClearContentsOvernightCondition": null,
-                    "StatsToIncrementWhenLoaded": null,
-                    "StatsToIncrementWhenHarvested": null,
-                    "ExperienceGainOnHarvest": null,
-                    "CustomFields": null
-                  },
-                "(BC){{ModID}}.ChroHFurnace": {
-                    "OutputRules": [
-                        {
-                            "Id": "Pulverized_IridiumBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "{{ModID}}.PulvIridium",
-                                "RequiredCount": 5
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)337", //Iridium Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 120
-                        },
-                        {
-                            "Id": "Pulverized_GoldBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "{{ModID}}.PulvGold",
-                                "RequiredCount": 5
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)336", //Gold Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 80
-                        },
-                        {
-                            "Id": "Pulverized_IronBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "{{ModID}}.PulvIron",
-                                "RequiredCount": 5
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)335", //Iron Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 30
-                        },
-                        {
-                            "Id": "Pulverized_CopperBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "{{ModID}}.PulvCopper",
-                                "RequiredCount": 5
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)334", //Copper Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 10
-                        },
-                        {
-                            "Id": "Pulverized_RefinedQuartz",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "{{ModID}}.PulvQuartz",
-                                "RequiredCount": 5
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)338", //Refined Quartz
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 20
-                        },
-                        {
-                            "Id": "Default_ChroBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "{{ModID}}.ChroCompound",
-                                "RequiredCount": 5
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "{{ModID}}.ChroBar", //Chromium Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 240
-                        },
-                        {
-                            "Id": "Pulverized_RadioactiveBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "{{ModID}}.PulvRadioactive",
-                                "RequiredCount": 5
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)910", //Radioactive Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 140
-                        },
-                        // {
-                        //     "Id": "Pulverized_PrisShard",
-                        //     "Triggers": [
-                        //         {    
-                        //         "Id": "ItemPlacedInMachine",
-                        //         "Trigger": "ItemPlacedInMachine",
-                        //         "RequiredItemID": "{{ModID}}.PulvPris"
-                        //         }
-                        //     ],
-                        //     "OutputItem": [
-                        //         {
-                        //         "ItemID": "(O)74", //Prismatic Shard
-                        //         "MinStack": 2
-                        //         }
-                        //     ],
-                        //     "MinutesUntilReady": 140
-                        // },
-                        {
-                            "Id": "Default_IridiumBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "386",
-                                "RequiredCount": 25,
-                                "Condition": "{{G256.IR.Code/UseOres}}"
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)337", //Iridium Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 120
-                        },
-                        {
-                            "Id": "Default_GoldBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "384",
-                                "RequiredCount": 25,
-                                "Condition": "{{G256.IR.Code/UseOres}}"
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)336", //Gold Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 80
-                        },
-                        {
-                            "Id": "Default_IronBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "380",
-                                "RequiredCount": 25,
-                                "Condition": "{{G256.IR.Code/UseOres}}"
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)335", //Iron Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 30
-                        },
-                        {
-                            "Id": "Default_CopperBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "378",
-                                "RequiredCount": 25,
-                                "Condition": "{{G256.IR.Code/UseOres}}"
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)334", //Copper Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 10
-                        },
-                        {
-                            "Id": "Default_QuartzRefined",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "80",
-                                "RequiredCount": 5,
-                                "Condition": "{{G256.IR.Code/UseOres}}"
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)338", //Refined Quartz
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 20
-                        },
-                        {
-                            "Id": "Default_FireQuartzRefined",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "82",
-                                "RequiredCount": 5,
-                                "Condition": "{{G256.IR.Code/UseOres}}"
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)338", //Refined Quartz
-                                "MinStack": 30,
-                                "MaxStack": 36
-                                }
-                            ],
-                            "MinutesUntilReady": 20
-                        },
-                        {
-                            "Id": "Default_RadioactiveBar",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "909",
-                                "RequiredCount": 25,
-                                "Condition": "{{G256.IR.Code/UseOres}}"
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)910", //Radioactive Bar
-                                "MinStack": 10,
-                                "MaxStack": 12
-                                }
-                            ],
-                            "MinutesUntilReady": 140
-                        },
-                        {
-                            "Id": "Default_WiltedBouquet",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredItemID": "458"
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "ItemID": "(O)277" //Witled Bouquet
-                                }
-                            ]
-                        }
-                    ],
-                    "PreventTimePass": null,
-                    "ReadyTimeModifiers": null,
-                    "ReadyTimeModifierMode": "Stack",
-                    "InvalidItemMessage": null,
-                    "InvalidItemMessageCondition": null,
-                    "InvalidCountMessage": "[LocalizedText Strings\\1_6_Strings:HeavyFurnace_ores]",
-                    
-                    "LoadEffects": [
-                        {
-                            "Id": "Default",
-                            "Frames": [2,3,4,5,6,7,8],
-                            "Interval": 60
-                        }
-                    ],
-                    "WorkingEffects": [
-                        {
-                            "Id": "Default",
-                            "Frames": [2,3,4,5,6,7,8],
-                            "Interval": 60
-                        }
-                    ],
-                    "AllowLoadWhenFull": false,
-                    "WobbleWhileWorking": false,
-                    "LightWhileWorking": {
-                      "Radius": 1.5,
-                      "Color": "GreenYellow"
-                    },
-                    "ShowNextIndexWhileWorking": false,
-                    "ShowNextIndexWhenReady": true,
-                    "AllowFairyDust": true,
-                    "IsIncubator": false,
-                    "ClearContentsOvernightCondition": null,
-                    "StatsToIncrementWhenLoaded": null,
-                    "StatsToIncrementWhenHarvested": null,
-                    "ExperienceGainOnHarvest": null,
-                    "CustomFields": null
-                },
-                "(BC){{ModID}}.FishingWell": {
-                    "OutputRules": [
-                        {
-                            "Id": "Default_Fish20",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredTags": [
-                                    "category_bait"
-                                    ],
-                                "RequiredCount": 20
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "OutputMethod": "IndustrializationRedux.ModEntry, IndustrializationRedux: OutputFishingWell",
-                                "CustomData": {
-                                    "BaitCount": 20
-                                }
-                                }
-                            ],
-                            "DaysUntilReady": 1
-                        },
-                        {
-                            "Id": "Default_Fish15",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredTags": [
-                                    "category_bait"
-                                    ],
-                                "RequiredCount": 15
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "OutputMethod": "IndustrializationRedux.ModEntry, IndustrializationRedux: OutputFishingWell",
-                                "CustomData": {
-                                    "BaitCount": 15
-                                }
-                                }
-                            ],
-                            "DaysUntilReady": 1
-                        },
-                        {
-                            "Id": "Default_Fish10",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredTags": [
-                                    "category_bait"
-                                    ],
-                                "RequiredCount": 10
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "OutputMethod": "IndustrializationRedux.ModEntry, IndustrializationRedux: OutputFishingWell",
-                                "CustomData": {
-                                    "BaitCount": 10
-                                }
-                                }
-                            ],
-                            "DaysUntilReady": 1
-                        },
-                        {
-                            "Id": "Default_Fish5",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredTags": [
-                                    "category_bait"
-                                    ],
-                                "RequiredCount": 5
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "OutputMethod": "IndustrializationRedux.ModEntry, IndustrializationRedux: OutputFishingWell",
-                                "CustomData": {
-                                    "BaitCount": 5
-                                }
-                                }
-                            ],
-                            "DaysUntilReady": 1
-                        },
-                        {
-                            "Id": "Default_Fish1",
-                            "Triggers": [
-                                {    
-                                "Id": "ItemPlacedInMachine",
-                                "Trigger": "ItemPlacedInMachine",
-                                "RequiredTags": [
-                                    "category_bait"
-                                    ],
-                                "RequiredCount": 1
-                                }
-                            ],
-                            "OutputItem": [
-                                {
-                                "OutputMethod": "IndustrializationRedux.ModEntry, IndustrializationRedux: OutputFishingWell",
-                                "CustomData": {
-                                    "BaitCount": 1
-                                }
-                                }
-                            ],
-                            "DaysUntilReady": 1
-                        }
-                    ],
-                    "WorkingEffects": null,
-                    "WorkingEffectChance": 0.33,
-                    "AllowLoadWhenFull": false,
-                    "WobbleWhileWorking": false,
-                    "LightWhileWorking": null,
-                    "ShowNextIndexWhileWorking": true,
                     "ShowNextIndexWhenReady": false,
                     "AllowFairyDust": true,
                     "IsIncubator": false,

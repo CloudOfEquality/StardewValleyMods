@@ -8,7 +8,7 @@
             "{{ModID}}.IndustrialDistillery": {
                 "ID": "{{ModID}}.IndustrialDistillery",
                 "ItemID": "{{ModID}}.IndustrialDistillery",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Industrial Distillery, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.DistilleryMail Received",
                 "IsRecipe": false,
                 "IgnoreShopPriceModifiers": true,
                 "Price": 5000
@@ -24,7 +24,7 @@
             "{{ModID}}.PreservativePress": {
                 "ID": "{{ModID}}.PreservativePress",
                 "ItemID": "{{ModID}}.PreservativePress",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Preservative Press, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.PressMail Received",
                 "IsRecipe": false,
                 "IgnoreShopPriceModifiers": true,
                 "Price": 3000
@@ -47,7 +47,7 @@
             "{{ModID}}.IronSeedMaker": {
                 "ID": "{{ModID}}.IronSeedMaker",
                 "ItemID": "{{ModID}}.IronSeedMaker",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Iron Seed Maker, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.SeedMakersMail Received",
                 "IsRecipe": false,
                 "IgnoreShopPriceModifiers": true,
                 "Price": 1000
@@ -78,15 +78,15 @@
             }
         },
         "MoveEntries": [
-            { "Id": "{{ModID}}.IronSeedMaker", "BeforeId": "(F)1308" },
-            { "Id": "{{ModID}}.IronSeedMakerRecipe", "BeforeId": "(F)1308" },
-            { "Id": "{{ModID}}.GoldSeedMakerRecipe", "BeforeId": "(F)1308" },
-            { "Id": "{{ModID}}.IridiumSeedMakerRecipe", "BeforeId": "(F)1308" },
-            { "Id": "{{ModID}}.IndustrialDistillery", "BeforeId": "(F)1308" },
-            { "Id": "{{ModID}}.IndustrialDistilleryRecipe", "BeforeId": "(F)1308" },
-            { "Id": "{{ModID}}.PreservativePress", "BeforeId": "(F)1308" },
-            { "Id": "{{ModID}}.PreservativePressRecipe", "BeforeId": "(F)1308" },
-            { "Id": "{{ModID}}.JColaGeneratorRecipe", "BeforeId": "(F)1308" }
+            { "ID": "{{ModID}}.IronSeedMaker", "BeforeID": "(F)1308" },
+            { "ID": "{{ModID}}.IronSeedMakerRecipe", "BeforeID": "(F)1308" },
+            { "ID": "{{ModID}}.GoldSeedMakerRecipe", "BeforeID": "(F)1308" },
+            { "ID": "{{ModID}}.IridiumSeedMakerRecipe", "BeforeID": "(F)1308" },
+            { "ID": "{{ModID}}.IndustrialDistillery", "BeforeID": "(F)1308" },
+            { "ID": "{{ModID}}.IndustrialDistilleryRecipe", "BeforeID": "(F)1308" },
+            { "ID": "{{ModID}}.PreservativePress", "BeforeID": "(F)1308" },
+            { "ID": "{{ModID}}.PreservativePressRecipe", "BeforeID": "(F)1308" },
+            { "ID": "{{ModID}}.JColaGeneratorRecipe", "BeforeID": "(F)1308" }
         ]
        },
        {
@@ -97,7 +97,7 @@
             "{{ModID}}.TreeCloche": {
                 "ID": "{{ModID}}.TreeCloche",
                 "ItemID": "{{ModID}}.TreeCloche",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Tree Cloche, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.TreeClocheMail Received",
                 "IsRecipe": false,
                 "Price": 2500
             },
@@ -111,7 +111,7 @@
             "{{ModID}}.EFurnace": {
                 "ID": "{{ModID}}.EFurnace",
                 "ItemID": "{{ModID}}.EFurnace",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Electric Furnace, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.EFurnaceMail Received",
                 "IsRecipe": false,
                 "Price": 2000
             },
@@ -125,7 +125,7 @@
             "{{ModID}}.AlternatorEFurnace": {
                 "ID": "{{ModID}}.AlternatorEFurnace",
                 "ItemID": "{{ModID}}.AlternatorEFurnace",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Alternator E. Furnace, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.EFurnaceMail Received",
                 "IsRecipe": false,
                 "Price": 2500
             },
@@ -139,7 +139,7 @@
             "{{ModID}}.CeramicKiln": {
                 "ID": "{{ModID}}.CeramicKiln",
                 "ItemID": "{{ModID}}.CeramicKiln",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Ceramic Kiln, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.EFurnaceMail Received",
                 "IsRecipe": false,
                 "Price": 1600
             },
@@ -153,7 +153,7 @@
             "{{ModID}}.CombustionGenerator": {
                 "ID": "{{ModID}}.CombustionGenerator",
                 "ItemID": "{{ModID}}.CombustionGenerator",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Combustion Generator, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.EFurnaceMail Received",
                 "IsRecipe": false,
                 "Price": 1500
             },
@@ -167,7 +167,7 @@
             "{{ModID}}.Pulverizer": {
                 "ID": "{{ModID}}.Pulverizer",
                 "ItemID": "{{ModID}}.Pulverizer",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Pulverizer, {{G256.IR.Code/MachinesSale}}",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.EFurnaceMail Received",
                 "IsRecipe": false,
                 "Price": 1000
             },
@@ -180,87 +180,21 @@
             }
         },
         "MoveEntries": [
-            { "Id": "{{ModID}}.CeramicKiln", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.CeramicKilnRecipe", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.CombustionGenerator", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.CombustionGeneratorRecipe", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.EFurnace", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.EFurnaceRecipe", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.Pulverizer", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.PulverizerRecipe", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.AlternatorEFurnace", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.AlternatorEFurnaceRecipe", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.Pulverizer", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.PulverizerRecipe", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.TreeCloche", "BeforeId": "(BC)208" },
-            { "Id": "{{ModID}}.TreeClocheRecipe", "BeforeId": "(BC)208" }
+            { "ID": "{{ModID}}.CeramicKiln", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.CeramicKilnRecipe", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.CombustionGenerator", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.CombustionGeneratorRecipe", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.EFurnace", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.EFurnaceRecipe", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.Pulverizer", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.PulverizerRecipe", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.AlternatorEFurnace", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.AlternatorEFurnaceRecipe", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.Pulverizer", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.PulverizerRecipe", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.TreeCloche", "BeforeID": "(BC)208" },
+            { "ID": "{{ModID}}.TreeClocheRecipe", "BeforeID": "(BC)208" }
         ]
-       },
-       {
-        "Action": "EditData",
-        "Target": "Data/Shops",
-        "TargetField": [ "FishShop", "Items" ],
-        "Entries": {
-            "{{ModID}}.GasSmoker": {
-                "ID": "{{ModID}}.GasSmoker",
-                "ItemID": "{{ModID}}.GasSmoker",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current AQUA Gas Smoker, {{G256.IR.Code/MachinesSale}}",
-                "IsRecipe": false,
-                "Price": 30000
-            },
-            "{{ModID}}.GasSmokerRecipe": {
-                "ID": "{{ModID}}.GasSmokerRecipe",
-                "ItemID": "{{ModID}}.GasSmoker",
-                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.AQUAMail Received",
-                "IsRecipe": true,
-                "Price": 16000
-            },
-            "{{ModID}}.FishingWell": {
-                "ID": "{{ModID}}.FishingWell",
-                "ItemID": "{{ModID}}.FishingWell",
-                "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current AQUA Fish Catcher, {{G256.IR.Code/MachinesSale}}",
-                "IsRecipe": false,
-                "Price": 25000
-            },
-            "{{ModID}}.FishingWellRecipe": {
-                "ID": "{{ModID}}.FishingWellRecipe",
-                "ItemID": "{{ModID}}.FishingWell",
-                "Condition": "PLAYER_HAS_MAIL Current {{ModID}}.AQUAMail Received",
-                "IsRecipe": true,
-                "Price": 18000
-            }
-        },
-            "MoveEntries": [
-                { "Id": "{{ModID}}.GasSmoker", "BeforeId": "(BC)FishSmoker (Recipe)" },
-                { "Id": "{{ModID}}.GasSmokerRecipe", "BeforeId": "(BC)FishSmoker (Recipe)" },
-                { "Id": "{{ModID}}.FishingWell", "BeforeId": "(BC)FishSmoker (Recipe)" },
-                { "Id": "{{ModID}}.FishingWellRecipe", "BeforeId": "(BC)FishSmoker (Recipe)" }
-            ]
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Shops",
-            "TargetField": [ "Blacksmith", "Items" ],
-            "Entries": {
-                "{{ModID}}.ChroCompoundY1": {
-                    "ID": "{{ModID}}.ChroCompoundY1",
-                    "ItemID": "{{ModID}}.ChroCompound",
-                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Chromium Compound, !YEAR 2",
-                    "IsRecipe": false,
-                    "Price": 25000
-                },
-                "{{ModID}}.ChroCompound": {
-                    "ID": "{{ModID}}.ChroCompound",
-                    "ItemID": "{{ModID}}.ChroCompound",
-                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Chromium Compound, YEAR 2",
-                    "IsRecipe": false,
-                    "Price": 45000
-                }
-            },
-            "MoveEntries": [
-                { "Id": "{{ModID}}.ChroCompoundY1", "AfterId": "GoldOre_YearOne" },
-                { "Id": "{{ModID}}.ChroCompound", "AfterId": "GoldOre_AfterYearOne"}
-            ]
-        }
+       }
     ]
 }

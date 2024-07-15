@@ -1,7 +1,7 @@
 {
   "MenuKey": "Tab",
   "TooltipKey": "Space",
-  "NameTooltipMode": 3,
+  "NameTooltipMode": 1,
   "OnlySameLocation": false,
   "ShowHiddenVillagers": false,
   "ShowQuests": true,

@@ -12,14 +12,6 @@
                     "Texture": "Mods\\{{ModID}}\\assets\\BigCraftables",
                     "SpriteIndex": 0
                 },
-                "{{ModID}}.EFurnace": {
-                    "Name": "Electric Furnace",
-                    "DisplayName": "[LocalizedText Strings\\BigCraftables:{{ModID}}.EFurnace_Name]",
-                    "Description": "[LocalizedText Strings\\BigCraftables:{{ModID}}.EFurnace_Description]",
-                    "Price": 0,
-                    "Texture": "Mods\\{{ModID}}\\assets\\BigCraftables",
-                    "SpriteIndex": 66
-                },
                 "{{ModID}}.AutoMiner": {
                     "Name": "Auto Miner",
                     "DisplayName": "[LocalizedText Strings\\BigCraftables:{{ModID}}.AutoMiner_Name]",
@@ -61,6 +53,14 @@
                     "CanBePlacedIndoors": "False",
                     "Texture": "Mods\\{{ModID}}\\assets\\BigCraftables",
                     "SpriteIndex": 55
+                },
+                "{{ModID}}.EFurnace": {
+                    "Name": "Electric Furnace",
+                    "DisplayName": "[LocalizedText Strings\\BigCraftables:{{ModID}}.EFurnace_Name]",
+                    "Description": "[LocalizedText Strings\\BigCraftables:{{ModID}}.EFurnace_Description]",
+                    "Price": 0,
+                    "Texture": "Mods\\{{ModID}}\\assets\\BigCraftables",
+                    "SpriteIndex": 66
                 },
                 "{{ModID}}.GardenCloche": {
                     "Name": "Garden Cloche",
@@ -181,30 +181,6 @@
                     "Price": 0,
                     "Texture": "Mods\\{{ModID}}\\assets\\BigCraftables",
                     "SpriteIndex": 211
-                },
-                "{{ModID}}.GasSmoker": {
-                    "Name": "AQUA Gas Smoker",
-                    "DisplayName": "[LocalizedText Strings\\BigCraftables:{{ModID}}.GasSmoker_Name]",
-                    "Description": "[LocalizedText Strings\\BigCraftables:{{ModID}}.GasSmoker_Description]",
-                    "Price": 0,
-                    "Texture": "Mods\\{{ModID}}\\assets\\BigCraftables",
-                    "SpriteIndex": 212
-                },
-                "{{ModID}}.ChroHFurnace": {
-                    "Name": "Chromium Heavy Furnace",
-                    "DisplayName": "[LocalizedText Strings\\BigCraftables:{{ModID}}.ChroHFurnace_Name]",
-                    "Description": "[LocalizedText Strings\\BigCraftables:{{ModID}}.ChroHFurnace_Description]",
-                    "Price": 0,
-                    "Texture": "Mods\\{{ModID}}\\assets\\BigCraftables",
-                    "SpriteIndex": 220
-                },
-                "{{ModID}}.FishingWell": {
-                    "Name": "AQUA Fish Catcher",
-                    "DisplayName": "[LocalizedText Strings\\BigCraftables:{{ModID}}.FishingWell_Name]",
-                    "Description": "[LocalizedText Strings\\BigCraftables:{{ModID}}.FishingWell_Description]",
-                    "Price": 0,
-                    "Texture": "Mods\\{{ModID}}\\assets\\BigCraftables",
-                    "SpriteIndex": 215
                 }
             }
         }

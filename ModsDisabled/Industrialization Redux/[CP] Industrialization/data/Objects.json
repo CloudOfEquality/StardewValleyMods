@@ -104,6 +104,16 @@
                     "Texture": "Mods\\{{ModID}}\\assets\\objects",
                     "SpriteIndex": 8
                 }
+                // "{{ModID}}.SmeltedFairyStone": {
+                //     "Name": "Smelted Fairy Stone",
+                //     "DisplayName": "[LocalizedText Strings\\Objects:{{ModID}}.SmeltedFairyStone_Name]",
+                //     "Description": "[LocalizedText Strings\\Objects:{{ModID}}.SmeltedFairyStone_Description]",
+                //     "Type": "Basic",
+                //     "Category": -15,
+                //     "Price": 500,
+                //     "Texture": "Mods\\{{ModID}}\\assets\\objects",
+                //     "SpriteIndex": 11
+                // }
             }
         }
     ]
